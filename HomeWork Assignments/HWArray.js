@@ -43,3 +43,8 @@ for(var i = 0; i < values.length; i++){
     sum += values[i]
 }
 console.log("The sum of values is: " +sum);
+
+var max = values.reduce(function(a,b){
+    return Math.max(a,b);
+});
+console.log("The max of values is: " +max);
